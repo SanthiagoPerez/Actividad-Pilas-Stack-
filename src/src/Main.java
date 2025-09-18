@@ -30,6 +30,32 @@ public class Main {
             System.out.println("Opcion incorrecta");
         }
     }
+    //Función para rehacer elementos
+    public static void rehacer(){
+        if(stack2.isEmpty() == true){ //Pregunta si el Stack2 está vacío
+            System.out.println("No se han eliminado elementos del Stack");
+        }else {
+            stack1.push(stack2.pop()); //Elimina el dato del stack2 y lo añade al stack1
+            System.out.println("-- SE HAN REHECHO LOS ELEMENTOS EN EL STACK --");
+            System.out.println("Texto Rehecho en el Stack1: " + stack1.peek()); //Trae el dato del Stack1 y lo muestra
+        }
+    }
+
+    public static void elementosTotales(){
+        if(stack1.isEmpty() == true){ //Pregunta si el stack1 está vacio
+            System.out.println("El Stack está vacio: " + stack1.isEmpty()); //Imprime verdadero o falso(Boolean)
+        } else {
+            System.out.println("Elementos Totales del Stack: " + stack1); //Imprime el stack1
+        }
+    }
+
+    public static void estado(){
+        if(stack1.isEmpty() == true){ //Pregunta si el stack1 está vacio
+            System.out.println("El Stack está vacio: " + stack1.isEmpty());//Imprime verdadero o falso(Boolean)
+        } else{
+            System.out.println("Texto Actual = " + stack1.peek());//Trae el dato del Stack1 y lo muestra
+        }
+    }
 
     public static void main(String[] args) {
         int seleccionarOpcion;
