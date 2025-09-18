@@ -31,8 +31,47 @@ public class Main {
         }
     }
 
-
     public static void main(String[] args) {
+        int seleccionarOpcion;
+        do { //inicia el ciclo
+            System.out.println("");
+            System.out.println("***--> MENU - PILAS(STACK) <--***");
+            Scanner sc = new Scanner(System.in);
+            System.out.println("1). Escriba un Texto - Push()");
+            System.out.println("2). Deshacer - Pop()");
+            System.out.println("3). Rehacer");
+            System.out.println("4). Mostrar Texto Actual - Peek()");
+            System.out.println("5). Mostrar Elementos Totales del Stack");
+            System.out.println("6). Salir");
+            System.out.println("*********************************");
 
+            System.out.print("Ingrese una opcion: ");
+            seleccionarOpcion = sc.nextInt();
+            switch (seleccionarOpcion) {
+                case 1:
+                    ingresarPush();
+                    break;
+                case 2:
+                    eliminarPop();
+                    break;
+                case 3:
+                    rehacer();
+                    break;
+                case 4:
+                    estado();
+                    break;
+                case 5:
+                    elementosTotales();
+                    break;
+                case 6:
+                    System.out.println("SALIENDO DEL PROGRAMA .....");
+                    break;
+            }
+            try {
+                Thread.sleep(3000); //Tiempo de respuesta de 3seg
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } while(seleccionarOpcion != 6); //Termine el ciclo
     }
 }
