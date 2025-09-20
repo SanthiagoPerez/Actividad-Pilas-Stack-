@@ -22,6 +22,47 @@ en el programa, por medio del trabajo colaborativo de los diferentes
 integrantes del equipo de desarrollo por medio del control de 
 versiones (Github) del proyecto.
 
+---> INSTRUCCIONES DE EJECUCIÓN <---
+
+1. Ejecutar el programa
+2. Usar el menú interactivo
+3. Opciones disponibles
+4. 
+        * Opción 1 → Push:
+          Escribes un texto y se guarda en el stack1. 
+        * Opción 2 → Pop:
+          Te pregunta si quieres eliminar el último texto ingresado.
+          Si respondes S, el texto se pasa a stack2 (deshacer).
+          Si respondes N, no elimina nada.
+        * Opción 3 → Rehacer:
+          Si has eliminado algo (está en stack2), puedes restaurarlo a stack1.
+        * Opción 4 → Peek:
+          Muestra el texto más reciente en stack1.
+        * Opción 5 → Mostrar todos los elementos:
+          Lista todos los elementos en stack1.
+        * Opción 6 → Salir:Termina el programa
+5. Ejemplo de ejecución
+   1. Seleccionas la opción 1 y escribes "Hola". 
+   2. Seleccionas la opción 1 otra vez y escribes "Mundo". 
+   3. El stack1 ahora tiene: [Hola, Mundo]
+   4. Seleccionas la opción 2 y confirmas con "S". 
+   5. Se elimina "Mundo" y pasa a stack2. 
+   6. Seleccionas la opción 3 (rehacer).
+   7. "Mundo" vuelve a stack1. 
+   8. Seleccionas la opción 5. 
+   9. Muestra: [Hola, Mundo].
+
+---> CAPTURAS DE LA EJECUCIÓN <---
+
+![Menú Principal](./src/assets/images/img.png)
+![Hacer Push](./src/assets/images/push.png)
+![Elementos Stack](./src/assets/images/ElementosStack.png)
+![Hacer Pop](./src/assets/images/Pop.png)
+![Mostrar Actual y Elementos Totales](./src/assets/images/MostrarActual&ElementosTotales.png)
+![Rehacer](./src/assets/images/Rehacer.png)
+![Elemento Total](./src/assets/images/ElementoTotal.png)
+
+
 ---> DESARROLLO DE LA ACTIVIDAD <---
 
 * Hicimos una descomposicion de los requisitos de la actividad
