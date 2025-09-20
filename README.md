@@ -1,19 +1,33 @@
 # Actividad-Pilas-Stack-
-Aplicar en un simulador los conceptos para deshacer/rehacer (Undo/Redo) en un editor de texto simple, implementado en Java, trabajando en equipo y utilizando buenas prácticas de control de versiones con GitHub.
+Aplicar en un simulador los conceptos para deshacer/rehacer (Undo/Redo) en un editor de texto simple, 
+implementado en Java, trabajando en equipo y utilizando buenas prácticas de control de versiones con GitHub.
 
----> INTEGRANTES DEL GRUPO <---
+-> **¿Qué es una PILA (STACK)**
 
-* Sara Gabriela Castro Mora
-* Santiago Pérez Pino
+Las pilas son estructuras de tipo LIFO, lo cual quiere decir que el último elemento añadido 
+es siempre el primero en salir.
 
----> OBJETIVO DE LA ACTIVIDAD <---
+-> **Cómo se Aplica al programa**
+
+- stack1 ` se usa como la pila principal: cada vez que el usuario hace **Push**, el texto se guarda en ` stack1.
+- Cuando el usuario selecciona **Deshacer (Pop)**, el elemento superior de `stack1` se remueve (`pop`) 
+y se inserta en `stack2` (la pila de “Redo”).
+- Si luego el usuario selecciona **Rehacer**, se saca (`pop`) de `stack2` y se envía de vuelta a `stack1`.
+- `Peek` permite ver el elemento actual que está en el tope de `stack1` sin removerlo.
+
+# INTEGRANTES DEL GRUPO 
+
+* `Sara Gabriela Castro Mora`
+* `Santiago Pérez Pino`
+
+# OBJETIVO DE LA ACTIVIDAD 
 
 Aprender a implementar los conceptos de pilas (Stack), conocer
 que conocer cada uno de sus principales métodos como lo son:
-* Push() = Añade datos a la Pila
-* Pop() = Elimina datos de la pila
-* Peek() = 
-* isEmpty() = Pregunta si está vacio
+* `Push()` = Añade datos a la Pila
+* `Pop()` = Elimina datos de la pila
+* `Peek()` =  Muestra el elemento de arriba
+* `isEmpty()` = Pregunta si está vacio
 
 Así mismo desarrollar un menú interactivo donde el usuario pueda
 digitar las opciones que desea realizar dentro del programa. Esto con 
@@ -22,7 +36,7 @@ en el programa, por medio del trabajo colaborativo de los diferentes
 integrantes del equipo de desarrollo por medio del control de 
 versiones (Github) del proyecto.
 
----> INSTRUCCIONES DE EJECUCIÓN <---
+ # INSTRUCCIONES DE EJECUCIÓN
 
 1. Ejecutar el programa
 2. Usar el menú interactivo
@@ -42,17 +56,17 @@ versiones (Github) del proyecto.
           Lista todos los elementos en stack1.
         * Opción 6 → Salir:Termina el programa
 5. Ejemplo de ejecución
-   1. Seleccionas la opción 1 y escribes "Hola". 
-   2. Seleccionas la opción 1 otra vez y escribes "Mundo". 
-   3. El stack1 ahora tiene: [Hola, Mundo]
-   4. Seleccionas la opción 2 y confirmas con "S". 
-   5. Se elimina "Mundo" y pasa a stack2. 
-   6. Seleccionas la opción 3 (rehacer).
-   7. "Mundo" vuelve a stack1. 
-   8. Seleccionas la opción 5. 
-   9. Muestra: [Hola, Mundo].
+   1. `Seleccionas la opción 1 y escribes "Hola".` 
+   2. `Seleccionas la opción 1 otra vez y escribes "Mundo".` 
+   3. `El stack1 ahora tiene: [Hola, Mundo]`
+   4. `Seleccionas la opción 2 y confirmas con "S".` 
+   5. `Se elimina "Mundo" y pasa a stack2.` 
+   6. `Seleccionas la opción 3 (rehacer).`
+   7. `"Mundo" vuelve a stack1.` 
+   8. `Seleccionas la opción 5.` 
+   9. `Muestra: [Hola, Mundo].`
 
----> CAPTURAS DE LA EJECUCIÓN <---
+# CAPTURAS DE LA EJECUCIÓN 
 
 ![Menú Principal](./src/assets/images/img.png)
 ![Hacer Push](./src/assets/images/push.png)
@@ -63,7 +77,7 @@ versiones (Github) del proyecto.
 ![Elemento Total](./src/assets/images/ElementoTotal.png)
 
 
----> DESARROLLO DE LA ACTIVIDAD <---
+# DESARROLLO DE LA ACTIVIDAD 
 
 * Hicimos una descomposicion de los requisitos de la actividad
 para saber que funcionalidades debia de tener el programa.
